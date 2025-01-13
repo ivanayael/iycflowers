@@ -1,6 +1,6 @@
 body {
     background-color: rgb(199, 228, 190);
-    color: royalblue;
+    color: #1d1e33;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
@@ -79,6 +79,12 @@ h2 {
     height: 40px;
 }
 
+footer
+{
+    padding: 10px;
+    margin: 10px;
+    text-align: inherit;
+}
 
 
 /* Estilos para pantallas pequeñas */
