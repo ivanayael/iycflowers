@@ -1,95 +1,135 @@
+:root {
+    --primary: #348E38;
+    --dark: #1A2A18;
+    --light: #F7F8F4;
+}
+
 body {
-    background-color: rgb(199, 228, 190);
-    color: #1d1e33;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.text-primary { color: var(--primary) !important; }
+.btn-primary { background-color: var(--primary); border: none; border-radius: 50px; transition: 0.3s; }
+.btn-primary:hover { background-color: #2d7a31; transform: scale(1.05); }
+
+/* Hero */
+.data-header {
+    background: linear-gradient(rgba(26, 42, 24, 0.7), rgba(26, 42, 24, 0.7)), 
+                url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+/* TARJETAS DE PLANTAS */
+.service-item {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    box-shadow: 0 0 45px rgba(0,0,0,.08);
+    background: #fff;
+    border: none;
+}
+
+.service-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.6s;
+}
+
+.service-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+    z-index: 2;
     text-align: center;
 }
 
-h2 {
-    font-size: 18px;
- }
+.service-item:hover .service-img img { transform: scale(1.15); }
+.service-item:hover .service-text { background: var(--primary); color: #fff; }
+.service-item:hover .service-text h4, 
+.service-item:hover .service-text .btn { color: #fff !important; }
 
-.logo{
-    border-radius: 78px;
+/* ANIMACIÓN DE SCROLL */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-
-.galeria-contenedor {
-    display: grid; /* Usamos grid para organizar las imágenes */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta automáticamente las columnas */
-    gap: 20px; /* Espacio entre las imágenes */
-    margin: 20px 0; /* Margen superior e inferior */
-}
-
-/* Contenedor de cada enlace */
-.galeria {
-    display: block; /* Asegura que el enlace ocupe todo el espacio disponible */
-    overflow: hidden; /* Hace que las imágenes se recorten si sobresalen */
-    transition: transform 0.3s ease; /* Añade una transición suave al efecto hover */
-}
-
-/* Imágenes uniformes */
-.galeria img {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 200px; /* Ajusta la altura uniforme para todas las imágenes */
-    object-fit: cover; /* Recorta la imagen para que encaje sin deformarse */
-    border-radius: 10px; /* Bordes redondeados */
-    display: block; /* Asegura que no haya espacio extra en el contenedor */
-}
-
-/* Efecto hover */
-.galeria:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen cuando pasa el ratón */
-}
+/* Footer y Otros */
+.btn-square { width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; }
+.shadow { box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important; }
 
 
-.botones {
-    display: flex;
-    flex-direction: column; /* Coloca los botones uno debajo del otro */
-    align-items: center;    /* Centra los botones horizontalmente */
-    gap: 20px;              /* Espacio entre los botones */
-    margin-top: 20px;       /* Margen superior opcional */
-}
-
-.link {
-    display: inline-block; /* Asegura que los botones tengan su tamaño natural */
-    width: 300px;
-    height: auto;           /* El ancho será el necesario para el contenido */
-    padding: 15px 20px;    /* Ajusta el espacio interno */
-    background-color: white;
-    font-size: 20px;
+/* Estilos específicos para la sección de Servicios */
+.service-icon img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 10px;
-    color: slateblue;
-    text-align: center;    /* Centra el texto dentro del botón */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Efecto hover */
-.link:hover {
-    background-color: #f0f0f0; /* Cambia el color de fondo al pasar el ratón */
-    transform: scale(1.05);    /* Agranda ligeramente el botón */
-}
-
-
-.logo_footer{
-    border-radius: 78px;
-    width: 40px;
-    height: 40px;
-}
-
-footer
-{
+.service-item i {
+    margin-top: -25px;
+    background: #fff;
     padding: 10px;
-    margin: 10px;
-    text-align: inherit;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+.service-item p {
+    color: #666;
+    line-height: 1.6;
+}
 
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-    .galeria-contenedor {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Reduce el tamaño mínimo en pantallas pequeñas */
-    }
+/* Mantener el efecto de elevación */
+.service-item:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+}
+
+/* Estilos específicos para la sección de Servicios */
+.service-icon img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-item i {
+    margin-top: -25px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Mantener el efecto de elevación */
+.service-item:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease;
 }

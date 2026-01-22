@@ -1,50 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IYC Flowers</title>
+    <title>IYC Garden | Consultoría Botánica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <img src="img/IconoLinkedinIYC.jpg" alt="IYC Flowers" class="logo">
-    <h1>IYC Garden</h1>
-    <h2>Jardinería</h2>
 
-    <section id="plantas" name="plantas">
-        <h4>Estas son las tipos de plantas que puedo cuidar</h4>
-        <div class="galeria-contenedor">
-           
-            <a class="galeria" href="https://www.cuerpomente.com/guia-plantas/lavanda">
-                <img src="https://content.cuerpomente.com/medio/2020/07/29/lavanda_2e89b081_900x599.jpg" alt="Lavanda">
-            </a>
-            <a class="galeria" href="https://www.lysaflores.com/blog/historia-de-las-rosas-blancas/">
-                <img src="https://www.lysaflores.com/blog/wp-content/uploads/2017/04/Diccionario-de-colores-de-las-flores.jpg" alt="Rosa Blanca">
-            </a>
-            <a class="galeria" href="https://www.koppert.com.ar/cultivos/plantas-ornamentales/lirio/">
-                <img src="https://www.koppert.com.ar/content/_processed_/9/2/csm_Lily_02e82e4991.jpg" alt="Lirio">
-            </a>
-            <a class="galeria" href="https://www.jardineriaon.com/cactus-con-flores.html">
-                <img src="https://www.jardineriaon.com/wp-content/uploads/2017/02/Notocactus_minimus-1024x691.jpg" alt="Cactus Parody">
-            </a>
-            <a class="galeria" href="https://mymodernmet.com/es/rosa-osiria/">
-                <img src="https://mymodernmet.com/wp/wp-content/uploads/2020/02/osiria-rose-01.jpg" alt="Rosa Osiria">
-            </a>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4">
+            <h1 class="m-0 text-primary"><i class="fa fa-leaf me-2"></i>IYC Garden</h1>
+        </a>
+    </nav>
+
+    <div class="container-fluid data-header py-5 mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 text-white mb-4">Hola, soy Ivana</h1>
+                    <p class="fs-5 text-white mb-4">Especialista en cuidado botánico. Te ayudo a diagnosticar y sanar tus plantas con asesoría personalizada.</p>
+                    <a href="#consultoria" class="btn btn-primary py-3 px-5">Solicitar Consulta</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img class="img-fluid rounded-circle foto-perfil" src="img/client-img.png" alt="Ivana" style="width: 300px; height: 300px; object-fit: cover; border: 8px solid rgba(255,255,255,0.2);">
+                </div>
+            </div>
         </div>
-    </section>
-  
-    <div class="botones">
-        <a class="link" href="mailto:ivanayaelcurra@gmail.com">Contactame para que cuide tus flores</a>
-        <a class="link" href="https://github.com/ivanayael">Github</a>
     </div>
- 
-    <footer>
-        <a href="https://www.iycsapphire.com.ar" >
-            <img src="img/IconoLinkedinIYC.jpg" alt="Mi Negocio IYC Sapphire" class="logo_footer">
-        </a> 
-        <p>© 2025 Ivana Yael Currá</p>
-    </footer>
 
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 reveal" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Lo que hago</h6>
+                <h1 class="display-5 mb-4">Mis Servicios Profesionales</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="service-item-box rounded p-4 shadow-sm text-center h-100 bg-white">
+                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=400&q=80" alt="Salud Vegetal" class="img-fluid rounded mb-3">
+                        <h4 class="mb-3">Salud y Diagnóstico</h4>
+                        <p class="mb-4">Análisis detallado de plagas y deficiencias para devolverle la vida a tus plantas.</p>
+                        <a href="#consultoria" class="btn btn-outline-primary rounded-pill px-4">Consultar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="service-item-box rounded p-4 shadow-sm text-center h-100 bg-white">
+                        <img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=400&q=80" alt="Diseño" class="img-fluid rounded mb-3">
+                        <h4 class="mb-3">Diseño de Paisajes</h4>
+                        <p class="mb-4">Creamos espacios verdes armoniosos en balcones, terrazas e interiores.</p>
+                        <a href="#consultoria" class="btn btn-outline-primary rounded-pill px-4">Consultar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="service-item-box rounded p-4 shadow-sm text-center h-100 bg-white">
+                        <img src="https://plus.unsplash.com/premium_photo-1661501340445-1f6ae4bdf26e?auto=format&fit=crop&w=400&q=80" alt="Suministros" class="img-fluid rounded mb-3">
+                        <h4 class="mb-3">Suministro Botánico</h4>
+                        <p class="mb-4">Sustratos orgánicos y selección de especies ideales para tu entorno específico.</p>
+                        <a href="#consultoria" class="btn btn-outline-primary rounded-pill px-4">Consultar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 reveal" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Mi Pasión</h6>
+                <h1 class="display-5 mb-4">Plantas que puedo cuidar</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="service-item rounded">
+                        <div class="service-img"><img src="https://content.cuerpomente.com/medio/2020/07/29/lavanda_2e89b081_900x599.jpg" alt="Lavanda"></div>
+                        <div class="service-text p-4">
+                            <h4>Lavanda</h4>
+                            <a class="btn btn-sm" href="https://www.cuerpomente.com/guia-plantas/lavanda" target="_blank"><i class="fa fa-plus me-2"></i>Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="service-item rounded">
+                        <div class="service-img"><img src="https://www.lysaflores.com/blog/wp-content/uploads/2017/04/Diccionario-de-colores-de-las-flores.jpg" alt="Rosa"></div>
+                        <div class="service-text p-4">
+                            <h4>Rosa Blanca</h4>
+                            <a class="btn btn-sm" href="https://www.lysaflores.com/blog/historia-de-las-rosas-blancas/" target="_blank"><i class="fa fa-plus me-2"></i>Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="service-item rounded">
+                        <div class="service-img"><img src="https://www.koppert.com.ar/content/_processed_/9/2/csm_Lily_02e82e4991.jpg" alt="Lirio"></div>
+                        <div class="service-text p-4">
+                            <h4>Lirio</h4>
+                            <a class="btn btn-sm" href="https://www.koppert.com.ar/cultivos/plantas-ornamentales/lirio/" target="_blank"><i class="fa fa-plus me-2"></i>Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="service-item rounded">
+                        <div class="service-img"><img src="https://www.jardineriaon.com/wp-content/uploads/2017/02/Notocactus_minimus-1024x691.jpg" alt="Cactus"></div>
+                        <div class="service-text p-4">
+                            <h4>Cactus Parody</h4>
+                            <a class="btn btn-sm" href="https://www.jardineriaon.com/cactus-con-flores.html" target="_blank"><i class="fa fa-plus me-2"></i>Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="service-item rounded">
+                        <div class="service-img"><img src="https://mymodernmet.com/wp/wp-content/uploads/2020/02/osiria-rose-01.jpg" alt="Rosa"></div>
+                        <div class="service-text p-4">
+                            <h4>Rosa Osiria</h4>
+                            <a class="btn btn-sm" href="https://mymodernmet.com/es/rosa-osiria/" target="_blank"><i class="fa fa-plus me-2"></i>Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid quote my-5 py-5" id="consultoria">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="bg-white rounded p-5 shadow">
+                        <h1 class="display-5 text-center mb-5">Consulta Online</h1>
+                        <form action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control bg-light border-0" name="planta" placeholder="Nombre de la planta" style="height: 55px;">
+                                </div>
+                                <div class="col-sm-6">
+                                    <select class="form-select bg-light border-0" name="sintomas" style="height: 55px;">
+                                        <option value="hojas-amarillas">Hojas amarillas</option>
+                                        <option value="puntas-secas">Puntas secas</option>
+                                        <option value="plagas">Bichitos/Plagas</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control bg-light border-0" name="mensaje" rows="4" placeholder="Describe el problema..."></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-primary py-3 px-5" type="submit">Enviar Consulta</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6">
+                    <h4 class="text-white mb-4">Contacto</h4>
+                    <p><i class="fa fa-envelope me-3"></i>ivanayaelcurra@gmail.com</p>
+                    <div class="d-flex">
+                        <a class="btn btn-outline-light btn-square me-2" href="https://github.com/ivanayael" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-square" href="https://www.iycsapphire.com.ar" target="_blank"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <img src="img/IconoLinkedinIYC.jpg" class="rounded-circle mb-3" style="width: 60px;">
+                    <p class="mb-0">© 2026 Ivana Yael Currá</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
